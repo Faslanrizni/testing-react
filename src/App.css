@@ -1,0 +1,192 @@
+.logo{
+  height: 70px;
+  width: auto;
+}
+.section{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main-heading{
+  color: red;
+}
+.card-deck{
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+
+}
+.card{
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+
+}
+.link-footer a {
+  text-decoration: none;
+  color: white;
+}
+.card-img{
+  height: 450px;
+  background-size: cover;
+
+}
+.loading{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.featured-rooms-center{
+  display: flex;
+  flex: 1;
+  margin-left: 150px;
+  justify-content: space-between;
+  margin-right: 150px;
+}
+.room{
+  margin-bottom: 100px;
+}
+.roomslist{
+  padding-left: 150px;
+  /*margin-bottom: 100px;*/
+}
+.roomsList-center{
+  padding-top: 100px;
+}
+/*.roomsList-center{
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 30px;
+}*/
+/*
+.main{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx6MIZHFw2FVP2vQkcSif2_rnYyd7EII6dAsBpk3qtT6k8WNrLEk_4FPDok-yCwozJjHc&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}*/
+/*
+.filter-container{
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}*/
+.FlexClass{
+  justify-content: center;
+  align-items: center;
+  marginRight: '1';
+}
+.home-container{
+  background-color: lightsteelblue;
+}
+.featured-rooms-h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.filter-container{
+  display: inline-block;
+  color: blanchedalmond;
+  background: rgba(0,0,0,0.5);
+  padding:5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1000px;
+  margin-left: 700px;
+  margin-bottom: -1000px;
+
+
+}
+.navbar-light{
+  background-color: black;
+  top: 0;
+}
+.favourite{
+  font-weight: 50;
+  font-size: 20px;
+}
+
+.full-width {
+  width: 100%;
+  height: auto;
+}
+/* Add this to your CSS or SCSS */
+.image-slider {
+  position: relative;
+  width: 100%;
+  /*height: 100vh; !* Set the height to 100% of the viewport height *!*/
+  overflow: hidden;
+}
+.image-slider img {
+  width: 100%;
+  /*height: 100%;*/
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+  font-weight: 1000;
+  color: red;
+}
+
+.next {
+  right: 10px;
+  font-weight: 1000;
+  color: red;
+}
+.setWidth{
+  width: 100%;
+}
+.mainHero{
+  min-height: calc(100vh - 66px);
+  background-image: url("https://img.freepik.com/free-psd/modern-farmhouse-meadow-hill-generative-ai_587448-2226.jpg?size=626&ext=jpg&ga=GA1.2.1313303609.1697107729&semt=ais");
+  display: flex;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  background-size: cover;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+}
+.featuredProperties{
+  min-height: calc(80vh - 66px);
+  background-image: url("https://img.freepik.com/free-photo/montreal_649448-3935.jpg?size=626&ext=jpg");
+  display: flex;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  background-size: cover;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.banner{
+  display: inline-block;
+  color: blanchedalmond;
+  background: rgba(0,0,0,0.5);
+  padding:5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.banner div{
+  width: 5rem;
+  height: 20px;
+
+}
