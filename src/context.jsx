@@ -2,9 +2,10 @@ import React, {Component} from 'react'
 import item from './data.json';
 
 
-const RoomContext = React.createContext();
+// const RoomContext = React.createContext();
+const PropertyMain = React.createContext();
 
-class RoomProvider extends Component{
+class PropertyProvider extends Component{
     state={
         rooms:[],
         sortedRooms:[],
@@ -80,11 +81,11 @@ class RoomProvider extends Component{
         /*=====call back====*/
         this.setState({
             [name]:value
-        },this.filterRooms)
+        },this.filterProperties)
 
         console.log(`type: ${type} ,value: ${value}, name: ${name}`)
     }
-    filterRooms = ()=>{
+    filterProperties = ()=>{
         let{/*we use let becuase we overidding the bedrooms in below*/
             rooms,type,price,maxPrice,minPrice,maxBedrooms,minBedrooms,bedrooms,dateFilter
         } = this.state
@@ -132,7 +133,7 @@ class RoomProvider extends Component{
             sortedRooms:tempRooms
         })
     };
-    getRoom = (tenure) =>{
+    getProperty = (tenure) =>{
         let tempRooms = [...this.state.rooms]
         const room = tempRooms.find(room =>room.tenure===tenure)
         return room;
@@ -140,21 +141,22 @@ class RoomProvider extends Component{
 
     render(){
         return(
-            <RoomContext.Provider
+            <PropertyMain.Provider
                 value={{
                     ...this.state,
-                    getRoom: this.getRoom,
+                    // getRoom: this.getRoom,
+                    getRoom: this.getProperty,
                     handleChange: this.handleChange
                 }}>
                 {this.props.children}
-            </RoomContext.Provider>
+            </PropertyMain.Provider>
         );
 
 
     }
 }
 
-const RoomConsumer = RoomContext.Consumer;
+const RoomConsumer = PropertyMain.Consumer;
 export function withRoomConsumer(Component){
     return function ConsumerWrapper(props){
         return <RoomConsumer>
@@ -162,6 +164,6 @@ export function withRoomConsumer(Component){
         </RoomConsumer>
     }
 }
-export {RoomProvider,RoomConsumer,RoomContext}
+export {PropertyProvider,RoomConsumer,PropertyMain}
 
 

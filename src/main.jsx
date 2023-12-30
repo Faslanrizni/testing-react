@@ -4,13 +4,13 @@ import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
-import {RoomProvider} from './context'
+import {PropertyProvider} from './context'
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <RoomProvider>
+    <PropertyProvider>
         <React.StrictMode>
             <App />
         </React.StrictMode>,
-    </RoomProvider>
+    </PropertyProvider>
     // document.getElementById('root')
 
 );

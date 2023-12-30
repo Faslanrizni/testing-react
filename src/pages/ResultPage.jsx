@@ -1,5 +1,5 @@
 import React from "react";
-import RoomContainer from '../components/RoomContainer';
+import RoomContainer from '../components/PropertiesContainer.jsx';
 import MainBackground from "../components/MainBackground.jsx";
 import Banner from "../components/Banner.jsx";
 

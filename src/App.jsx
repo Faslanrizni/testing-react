@@ -4,7 +4,7 @@ import './App.css'
 
 
 import Home from "./pages/Home";
-import Room from "./components/Room";
+import Properties from "./components/Properties.jsx";
 import ErrorPage from "./pages/ErrorPage";
 import ResulPage from "./pages/ResultPage";
 import SearchPage from "./pages/SearchPage";

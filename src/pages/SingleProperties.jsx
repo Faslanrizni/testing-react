@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { Link, useParams } from 'react-router-dom';
-import { RoomContext } from "../context.jsx";
+import { PropertyMain } from "../context.jsx";
+// import { PropertyMain } from "../context.jsx";
 import ImageSlider from "../components/ImageSlider.jsx";
 
 export default function SingleProperties() {
     const { tenure } = useParams();
-    const { getRoom } = useContext(RoomContext);
+    const { getRoom } = useContext(PropertyMain);
     const room = getRoom(tenure);
-    /*ewfewf*/
+
 
     if (!room) {
         return (

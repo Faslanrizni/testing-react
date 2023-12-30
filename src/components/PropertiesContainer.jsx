@@ -1,10 +1,12 @@
 import React from 'react';
-import RoomsFilter from './RoomFilter'
-import RoomsList from './RoomsList';
+
+import PropertisFilter from './PropertiesFilter.jsx'
+
+import PropertiesLIst from './PropertiesList.jsx';
 import {withRoomConsumer} from '../context';
 import Loading from './Loading';
 
-function RoomContainer({context}){
+function PropertiesContainer({context}){
     const {loading,sortedRooms,rooms} = context;
     if (loading){
         return <Loading/>
@@ -12,13 +14,13 @@ function RoomContainer({context}){
     return(
         <div>
 
-            <RoomsFilter rooms={rooms}/>
-            <RoomsList rooms={sortedRooms}/>
+            <PropertisFilter rooms={rooms}/>
+            <PropertiesLIst rooms={sortedRooms}/>
         </div>
     );
 
 }
-export default withRoomConsumer(RoomContainer)
+export default withRoomConsumer(PropertiesContainer)
 
 /*
 import React from 'react';

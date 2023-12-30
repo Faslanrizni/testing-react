@@ -1,6 +1,6 @@
 import React from 'react';
 import {useContext} from 'react';
-import {RoomContext} from '../context';
+import {PropertyMain} from '../context';
 
 /*===============get all uniqe values==============*/
 
@@ -10,8 +10,8 @@ const getUniqe = (items,value) =>{
 
 /*===============get all uniqe values==============*/
 
-export default function RoomFilter({rooms}){
-    const context = useContext(RoomContext);
+export default function PropertiesFilter({rooms}){
+    const context = useContext(PropertyMain);
     // console.log(context)
     const {
         handleChange,type,price,bedrooms,minPrice,maxPrice,
@@ -41,7 +41,7 @@ export default function RoomFilter({rooms}){
                 {/*==select type=*/}
 
                 <div className="form-group">
-                    <label htmlFor="type">room type</label>
+                    <label htmlFor="type">Property type</label>
                     <select
                         name="type"
                         id="type"

@@ -1,7 +1,8 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
-export default function Room({room}){
+// export default function Room({room}){
+export default function Properties({room}){
     const {type,price,picture,images,tenure} = room;
     // const imagesArray = Array.isArray(images) ? images : (picture ? [picture] : []);
 

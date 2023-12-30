@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
-import {RoomContext} from '../context';
+import {PropertyMain} from '../context';
 import items from '../data';
 import Loading from '../components/Loading';
-import Room from '../components/Room';
+import Room from './Properties.jsx';
+import Properties from './Properties.jsx';
 // import Title from './'
 
 
 import loading from '../components/Loading'
 
 class FeaturedProperties extends Component {
-    static contextType = RoomContext
+    static contextType = PropertyMain
     render() {
         let {loading,featuredRooms : rooms} = this.context;
         rooms = rooms.map(room =>{
             return <Room key={room.id} room={room}/>
+            // return <Properties key={room.id} room={room}/>
         })
 
         return (
