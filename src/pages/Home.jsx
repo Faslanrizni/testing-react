@@ -35,11 +35,14 @@ export default function Home(){
             <section className={'section'}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 mb-5 text-center ">
-                            <h3 className="main-heading">Services</h3>
-                            <div className="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem dolorem doloremque excepturi fugiat id illum in inventore, ipsa labore nam nemo nisi omnis pariatur quas sapiente, sed temporibus voluptatem.
+                        <div className="col-md-12 mb-5 text-center mainCss ">
+                            <div className="serviceHeading">
+                                <h3 className="main-heading">Services</h3>
+                                <div className="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem dolorem doloremque excepturi fugiat id illum in inventore, ipsa labore nam nemo nisi omnis pariatur quas sapiente, sed temporibus voluptatem.
+                                </div>
                             </div>
+
 
                             <div className="card-deck">
                                 <div className="card">

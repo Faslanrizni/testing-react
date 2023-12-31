@@ -23,8 +23,9 @@ export default function Properties({room}){
                     <h6>${price} per month</h6>
                 </div>
                 {/*<Link to={'#'} className={'btn btn-warning'}>Read More</Link>*/}
-                <Link to={`/rooms/${tenure}`} className={'room-link btn-primary'}>Reed More</Link>
+
                 <p className={'property-name'}>{type}</p>
+                <Link to={`/rooms/${tenure}`} className={'room-link'}>Reed More</Link>
             </div>
 
 

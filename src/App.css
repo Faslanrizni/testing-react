@@ -45,13 +45,17 @@
 .img-container{
   margin-bottom: 100px;
   border: 1px solid black;
-  width: 65%;
-  height: 75%;
+  width: 85%;
+  height:70%;
   box-shadow: 10px 5px 10px black;
+  border-radius: 15px;
+}
+.img-container img{
+  border-radius: 15px;
 }
 .img-container:hover{
   background:gainsboro;
-  color: white;
+  color: green;
   transform: scale(1.05); /* set to 1.05, which means the element will be scaled to 105% of its original size, when hover*/
 }
 .property{
@@ -215,4 +219,22 @@
   width: 5rem;
   height: 20px;
 
+}
+.additionalColor{
+  /*background:linear-gradient(rgba(0, 0, 0,1),rgba(0, 0, 0,0.7))*/
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+}
+.iconSize{
+  font-size: 30px;
+}
+.serviceHeading{
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: lightsteelblue;
+}
+.main-heading{
+  color: green;
+}
+.card-img-top{
+  height: 300px;
 }
