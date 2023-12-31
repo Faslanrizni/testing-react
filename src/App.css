@@ -42,16 +42,16 @@
   justify-content: space-between;
   margin-right: 150px;
 }
-.img-container{
+/*.img-container{
   margin-bottom: 100px;
   border: 1px solid black;
   width: 85%;
   height:70%;
   box-shadow: 10px 5px 10px black;
   border-radius: 15px;
-}
-.img-container img{
-  border-radius: 15px;
+}*/
+.property{
+  margin-bottom: 50px;
 }
 .img-container:hover{
   background:gainsboro;

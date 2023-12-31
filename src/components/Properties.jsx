@@ -8,8 +8,8 @@ export default function Properties({room}){
 
     return(
         <article className={'property'}>
-            <div className="img-container">
-                {/*<img src={imagesArray[0] || ''} alt="properties" />*/}
+            {/*<div className="img-container">
+                <img src={imagesArray[0] || ''} alt="properties" />
                 <img src={picture} alt="properties"/>
                 <div className="favourite">
                     <CiHeart />
@@ -17,17 +17,35 @@ export default function Properties({room}){
                 </div>
 
 
-                {/*<div> {price} {type}</div>*/}
+                <div> {price} {type}</div>
 
                 <div className="price-top">
                     <h6>${price} per month</h6>
                 </div>
-                {/*<Link to={'#'} className={'btn btn-warning'}>Read More</Link>*/}
+                <Link to={'#'} className={'btn btn-warning'}>Read More</Link>
 
                 <p className={'property-name'}>{type}</p>
                 <Link to={`/rooms/${tenure}`} className={'room-link'}>Reed More</Link>
-            </div>
+            </div>*/}
+            <div className="card img-container" style={{ width: '18rem' }}>
+                <img src={picture} className="card-img-top" alt="..."/>
 
+                <div className="card-body">
+                    <Link to={`#`} className="btn btn-primary ">Reed More</Link>
+                    <br/>
+                    <Link to={`/rooms/${tenure}`} className="btn btn-danger">Add to Favourite  <CiHeart /> </Link>
+                </div>
+                    <div className="card-body">
+                        <h5 className="card-title">property Type :{type}</h5>
+                        <p className="card-text">{''}</p>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                        <li className="list-group-item">{type}</li>
+                        <li className="list-group-item">${price} per month</li>
+                        <li className="list-group-item">A third item</li>
+                    </ul>
+
+            </div>
 
 
 
