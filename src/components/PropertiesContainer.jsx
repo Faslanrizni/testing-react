@@ -1,13 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 
 import PropertisFilter from './PropertiesFilter.jsx'
 
 import PropertiesLIst from './PropertiesList.jsx';
 import {withRoomConsumer} from '../context';
 import Loading from './Loading';
+import favouritesList from "./FavouritesList.jsx";
+import PropertiesList from "./PropertiesList.jsx";
+import FavouritesList from "./FavouritesList.jsx";
 
 function PropertiesContainer({context}){
     const {loading,sortedRooms,rooms} = context;
+    const [favourites, setFavourites] = useState([]);
+    const addToFavourites = property => {
+        if (!favourites.find(fav => fav.id === property.id)) {
+            setFavourites([...favourites, property]);
+        }
+    };
+
+    const removeFromFavourites = property => {
+        const updatedFavourites = favourites.filter(fav => fav.id !== property.id);
+        setFavourites(updatedFavourites);
+    };
+
+    const clearFavourites = () => {
+        setFavourites([]);
+    };
+
+
     if (loading){
         return <Loading/>
     }
@@ -15,7 +36,13 @@ function PropertiesContainer({context}){
         <div>
 
             <PropertisFilter rooms={rooms}/>
-            <PropertiesLIst rooms={sortedRooms}/>
+            <FavouritesList
+                favourites={favourites}
+                onAddToFavourites={addToFavourites}
+                onRemoveFromFavourites={removeFromFavourites}
+                onClearFavourites={clearFavourites}
+            />
+            <PropertiesList rooms={sortedRooms} onAddToFavourites={addToFavourites} />
         </div>
     );
 

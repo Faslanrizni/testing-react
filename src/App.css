@@ -42,14 +42,7 @@
   justify-content: space-between;
   margin-right: 150px;
 }
-/*.img-container{
-  margin-bottom: 100px;
-  border: 1px solid black;
-  width: 85%;
-  height:70%;
-  box-shadow: 10px 5px 10px black;
-  border-radius: 15px;
-}*/
+
 .property{
   margin-bottom: 50px;
 }
@@ -156,28 +149,6 @@
   object-fit: cover; /* Ensure the image covers the entire container */
 }
 
-.arrow-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
-
-.prev {
-  left: 10px;
-  font-weight: 1000;
-  color: red;
-}
-
-.next {
-  right: 10px;
-  font-weight: 1000;
-  color: red;
-}
 .setWidth{
   width: 100%;
 }
