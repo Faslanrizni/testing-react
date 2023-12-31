@@ -18,7 +18,7 @@ export default function Home(){
                 </Banner>
             </MainBackground>
             {/*   <ImageScrollbar images={images}>*/}
-            <section className={'section'}>
+           {/* <section className={'section'}>
                 <div className="container home-container">
                     <div className="row">
                         <div className="col-md-12 text-center ">
@@ -31,7 +31,7 @@ export default function Home(){
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>*/}
             <section className={'section'}>
                 <div className="container">
                     <div className="row">

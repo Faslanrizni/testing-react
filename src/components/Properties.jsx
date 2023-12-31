@@ -7,7 +7,7 @@ export default function Properties({room}){
     // const imagesArray = Array.isArray(images) ? images : (picture ? [picture] : []);
 
     return(
-        <article className={'room'}>
+        <article className={'property'}>
             <div className="img-container">
                 {/*<img src={imagesArray[0] || ''} alt="properties" />*/}
                 <img src={picture} alt="properties"/>
@@ -24,8 +24,9 @@ export default function Properties({room}){
                 </div>
                 {/*<Link to={'#'} className={'btn btn-warning'}>Read More</Link>*/}
                 <Link to={`/rooms/${tenure}`} className={'room-link btn-primary'}>Reed More</Link>
+                <p className={'property-name'}>{type}</p>
             </div>
-            <p className={'property-name'}>{type}</p>
+
 
 
 
