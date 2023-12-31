@@ -5,7 +5,7 @@ import Footer from './Footer'
 import MainBackground from "./MainBackground.jsx";
 import Banner from "./Banner.jsx";
 // export default function RoomsList({rooms}){
-export default function PropertiesList({rooms, onAddToFavourites}){
+export default function PropertiesList({rooms, onAddToFavourites,favourites}){
     if (rooms.length === 0){
         return (
             <>
@@ -27,7 +27,9 @@ export default function PropertiesList({rooms, onAddToFavourites}){
                     {rooms.map(item => (
                         <div key={item.id} className="col-md-4 mb-3">
                             {/*<Room room={item} />*/}
-                            <Properties room={item} onAddToFavourites={() => onAddToFavourites(item)} />
+                            <Properties room={item}
+                                        onAddToFavourites={() => onAddToFavourites(item)}
+                                        isFavourite={favourites.some((fav) => fav.id === item.id)}/>
                         </div>
                     ))}
                 </div>

@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 // export default function Room({room}){
-export default function Properties({room, onAddToFavourites}){
+export default function Properties({room, onAddToFavourites,isFavourite}){
     const {type,price,picture,images,tenure} = room;
     // const imagesArray = Array.isArray(images) ? images : (picture ? [picture] : []);
 
@@ -33,8 +33,12 @@ export default function Properties({room, onAddToFavourites}){
                 <div className="card-body">
                     <Link to={`/rooms/${tenure}`} className="btn btn-primary ">Reed More</Link>
                     <br/>
-                    <button className="btn btn-danger" onClick={onAddToFavourites}>
-                        Add to Favourite <CiHeart />
+                    <br/>
+                    <button
+                        onClick={() => onAddToFavourites(room)}
+                        className="btn btn-danger"
+                    >
+                        {isFavourite ? 'Already added to Favourite' : 'Add to Favourite'} <CiHeart />
                     </button>
                 </div>
                     <div className="card-body">

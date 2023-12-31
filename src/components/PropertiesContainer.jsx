@@ -42,7 +42,10 @@ function PropertiesContainer({context}){
                 onRemoveFromFavourites={removeFromFavourites}
                 onClearFavourites={clearFavourites}
             />
-            <PropertiesList rooms={sortedRooms} onAddToFavourites={addToFavourites} />
+            <PropertiesList rooms={sortedRooms}
+                            onAddToFavourites={addToFavourites}
+                            favourites={favourites}
+            />
         </div>
     );
 
